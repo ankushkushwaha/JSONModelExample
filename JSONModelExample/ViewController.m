@@ -27,6 +27,10 @@
                                                   encoding:NSUTF8StringEncoding
                                                      error:NULL];
 
+    NSError* err = nil;
+    User* user = [[User alloc] initWithString:content error:&err];
+    
+    NSLog(@"%@",user.country);
     
 }
 
